@@ -72,7 +72,7 @@ const projectNavPartial = `
       <a class="nav-link disabled" aria-disabled="true">Tetris</a>
   </li>
   <li class="nav-item">
-      <a class="nav-link disabled" aria-disabled="true">Scramble</a>
+      <a class="nav-link" aria-label="page" href="project.html?project=Scramble">Scramble</a>
   </li>
   <li class="nav-item">
       <a class="nav-link disabled" aria-disabled="true">Platforming Game</a>
