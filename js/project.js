@@ -1,21 +1,30 @@
-function markdownParser(text) {
-    const toHTML = text
-        .replace(/^###### (.*$)/gim, '<h6>$1</h6>') // h6 tag
-        .replace(/^##### (.*$)/gim, '<h5>$1</h5>') // h5 tag
-        .replace(/^#### (.*$)/gim, '<h4>$1</h4>') // h4 tag
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>') // h3 tag
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
-        .replace(/^# (.*$)/gim, '<h1>$1</h1>') // h1 tag
-        .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>') // bold text
-        .replace(/\*(.*)\*/gim, '<i>$1</i>'); // italic text
+class Project {
+    constructor(name, contents, images, repo = "") {
+        this.name = name;
+        this.contents = contents;
+        this.images = images;
+        this.repo = repo;
+    }
+}
 
-    return toHTML.trim();
+const projects = {
+    "Scramble": new Project("Scramble", "<p>Test content</p>", "")
 }
 
 function renderProject() {
-    const currentProject = markdownParser("## This is my project *Cool Project*");
+    const searchParams = new URLSearchParams(window.location.search);
+    const currentProject = projects[searchParams.get("project")];
 
-    document.querySelector("#projectPartial").innerHTML = currentProject;
+    document.querySelector("#projectPartial").innerHTML = currentProject.contents + currentProject.images;
+    document.querySelector("#projectName").innerHTML = currentProject.name;
+
+    if (isValidURL(currentProject.repo))
+        document.querySelector("#projectLink").innerHTML = `<a href="${currentProject.repo}" target="_blank">Repository</a>`;
+}
+
+function isValidURL(url) {
+    const urlPattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
+    return urlPattern.test(url);
 }
 
 renderProject();

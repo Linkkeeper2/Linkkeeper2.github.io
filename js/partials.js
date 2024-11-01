@@ -2,7 +2,7 @@ const navPartial = `
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="https://github.com/Linkkeeper2">
-        <img src="https://avatars.githubusercontent.com/u/148551689?v=4" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <img src="https://avatars.githubusercontent.com/u/148551689?v=4" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
         Linkk's GitHub Page
     </a>
 
