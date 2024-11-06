@@ -109,10 +109,10 @@ const projectNavPartial = `
       <a class="nav-link disabled" aria-disabled="true">Linkk's Fighting</a>
   </li>
   <li class="nav-item">
-      <a class="nav-link" aria-label="page">Linkk's Nextbots</a>
+      <a class="nav-link" aria-label="page" href="project.html?project=Linkk's Nextbots">Linkk's Nextbots</a>
   </li>
   <li class="nav-item">
-      <a class="nav-link disabled" aria-disabled="true" href="project.html?project=Linkk's Nextbots">Nerd</a>
+      <a class="nav-link disabled" aria-disabled="true">Nerd</a>
   </li>
 </ul>
 `;
