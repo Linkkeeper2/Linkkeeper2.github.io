@@ -8,7 +8,8 @@ class Project {
 }
 
 const projects = {
-    "Scramble": new Project("Scramble", "<p>Test content</p>", "")
+    "Scramble": new Project("Scramble", "<p>Test content</p>", ""),
+    "Linkk's Nextbots": new Project("Linkk's Nextbots", "", "", "https://drive.google.com/drive/folders/1untHc0KsqGMmiCVdhaJxXhi8zm7iek9K?usp=drive_link")
 }
 
 function renderProject() {
