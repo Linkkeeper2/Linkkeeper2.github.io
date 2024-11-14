@@ -1,7 +1,7 @@
 :root,
 [data-bs-theme=light] {
-    --bs-blue: #03afff;
-    --bs-primary: #03afff;
+    --bs-blue: #00BBFF;
+    --bs-primary: #00BBFF;
     --bs-primary-border-subtle: #7198d3;
     --bs-secondary: #a8d2ff;
     --bs-tertiary-color: #587ca3;
