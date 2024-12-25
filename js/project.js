@@ -59,7 +59,7 @@ const projects = {
             </button>
         </div>`,
         "", ""),
-    "Linkk's Nextbots": new Project("Linkk's Nextbots", "", "", "https://drive.google.com/drive/folders/1untHc0KsqGMmiCVdhaJxXhi8zm7iek9K?usp=drive_link")
+    "Nextbot Nightmare": new Project("Nextbot Nightmare", "", "", "https://drive.google.com/drive/folders/1untHc0KsqGMmiCVdhaJxXhi8zm7iek9K?usp=drive_link")
 }
 
 function renderProject() {
